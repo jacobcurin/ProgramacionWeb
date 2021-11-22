@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title id="InterfazR"><img src="assets/icon/logoduoc.png" width="40" height="40" alt="" loading="lazy">
+      TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="fondo">
+    <img src="assets/icon/recuperar.jpg" width="1200" height="700" alt="" loading="lazy">
+  </div>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card id="tarjeta" color="tertiary #5260ff">
+      
+    <strong>Recuperar Contraseña</strong>
+      <div class="casillas">
+        <div>
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" name="Correo" value="" placeholder="correo electronico" >
+        </div>
+        <div>
+          <ion-button [routerLink]="['/registro']">recuperar</ion-button>
+        </div>   
+      </div>
+    </ion-card>
+    
+  </div>
+
+</ion-content>

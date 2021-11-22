@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title id="interfazA">
+      <img src="assets/icon/logoduoc.png" width="40" height="40" alt="" loading="lazy">
+      TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div id="fondo">
+      <img src="assets/icon/login.jpg" width="1200" height="700" alt="" loading="lazy">
+    </div>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card id="tarjeta" color="primary">
+      
+    <strong>Acceso</strong>
+      <div class="casillas">
+        <div>
+          <ion-icon name="person-outline"></ion-icon>
+          <input type="text" name="usuario" value="" placeholder="Usuario" >
+        </div>
+        <div>
+          <ion-icon name="key-outline"></ion-icon>
+          <input type="password" name="Contraseña" value="" placeholder="Contraseña" >  
+        </div>
+        <div>
+          <ion-button [routerLink]="['/principal']">Insertar</ion-button>
+        </div>   
+      </div>
+    <p>¿se te olvido tu contraseña?<a [routerLink]="['/recuperar']" >Recuperar contraseña</a></p>
+    </ion-card>
+    
+  </div>
+
+</ion-content>
